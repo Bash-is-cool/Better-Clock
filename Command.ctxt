@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Command
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\n
+comment1.params=g\ width\ height
+comment1.target=void\ doCommand(java.awt.Graphics2D,\ int,\ int)
+comment2.params=x\ width
+comment2.target=double\ adjustX(double,\ int)
+comment3.params=y\ height
+comment3.target=double\ adjustY(double,\ int)
+comment4.params=x
+comment4.target=int\ round(double)
+numComments=5

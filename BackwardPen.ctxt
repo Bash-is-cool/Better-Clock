@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=BackwardPen
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\nProvides\ the\ same\ behavior\ as\ a\ standard\ pen,\ but\ each\ move\ is\ in\ the\r\nopposite\ direction.\r\n
+comment1.params=
+comment1.target=BackwardPen()
+comment2.params=p
+comment2.target=BackwardPen(SketchPad)
+comment3.params=w
+comment3.target=BackwardPen(SketchPadWindow)
+comment4.params=text
+comment4.target=void\ drawString(java.lang.String)
+comment5.params=x\ y
+comment5.target=void\ drawLine(double,\ double)
+numComments=6

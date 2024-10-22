@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=WorkingClock
+comment0.text=\r\n\ Makes\ good\ looking\ (and\ working)\ Analog\ clock\r\n\r\n\ @author\ Alex\ Silverman\r\n\ @version\ 1.1.1\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
