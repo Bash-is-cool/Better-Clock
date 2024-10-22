@@ -1,7 +1,8 @@
 import java.util.concurrent.TimeUnit;
 import java.time.*;
 import java.awt.*;
-
+import java.util.Timer;
+import java.util.TimerTask;
 /**
 <B><I>Copyright 2006</I></B> by Ken Lambert and Martin Osborne.
 <BR><BR>
@@ -12,26 +13,26 @@ public class ClockMethods extends AbstractPen {
 
    // Constructors ------------------------------
    
-   /**   
-   Action: Pops up an application window containing a sketchpad 
+   /**  
+   Action: Pops up an application window containing a sketchpad
    and an associated standard pen.
-   */   
+   */  
    public ClockMethods(){
       this(new SketchPad());
       new SketchPadWindow(pad);
    }
 
-   /**   
+   /**  
    Action: Associates a standard pen with a client-supplied sketchpad.
-   */   
+   */  
    public ClockMethods(SketchPad p){
       super(p);
    }
 
-   /**   
-   Action: Pops up the client's application window containing a sketchpad 
+   /**  
+   Action: Pops up the client's application window containing a sketchpad
    and an associated standard pen.
-   */   
+   */  
    public ClockMethods(SketchPadWindow w){
       this(new SketchPad());
       Container c = w.getContentPane();
@@ -57,7 +58,7 @@ public class ClockMethods extends AbstractPen {
       }
       xPos = x;
       yPos = y;
-   }   
+   }  
    
    public void drawRegularPoly(int sides, int x, int y, int length, int width){
         this.up();
@@ -130,14 +131,18 @@ public class ClockMethods extends AbstractPen {
         ClockMethods clock = new ClockMethods();
         clock.drawTicks();
         ZonedDateTime cst = ZonedDateTime.now(ZoneId.of("America/Chicago"));
-        
         int h = cst.getHour();
         int m = cst.getMinute();
         int s = cst.getSecond();
-        
-        if (s == 40) {
-            clock.setColor(Color.red);
-            clock.move(400, 100);
-        }
+       
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            public void run() {
+               
+            }
+        }, 0, 10);
    }
+
+   
 }
+
