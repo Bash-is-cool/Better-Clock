@@ -1,5 +1,3 @@
-package blueaxealotle.clock;
-
 import java.util.concurrent.TimeUnit;
 import java.time.*;
 import java.awt.*;

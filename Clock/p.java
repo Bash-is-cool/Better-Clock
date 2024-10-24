@@ -1,4 +1,4 @@
-package net.blueaxealotle.clock;
+
 
 public class p {
   public static void p(String t) {
