@@ -1,8 +1,8 @@
 
 
 public class p {
-  public static void p(String t) {
-    System.out.println(t);
+  public static void pp(String t) {
+    System.out.print(t);
   }
   public static void pl(String t) {
     System.out.println(t);
