@@ -130,15 +130,16 @@ public class ClockMethods extends AbstractPen {
    public static void drawClock(){
         ClockMethods clock = new ClockMethods();
         clock.drawTicks();
-        ZonedDateTime cst = ZonedDateTime.now(ZoneId.of("America/Chicago"));
-        int h = cst.getHour();
-        int m = cst.getMinute();
-        int s = cst.getSecond();
+        ZonedDateTime csts = ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond();
+        ZonedDateTime cstm = ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute();
+        ZonedDateTime csth = ZonedDateTime.now(ZoneId.of("America/Chicago")).getHour();
        
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             public void run() {
-               
+               p.pi(csts);
+               p.pi(cstm);
+               p.pi(csth);
             }
         }, 0, 10);
    }
