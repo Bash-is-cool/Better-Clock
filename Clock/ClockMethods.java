@@ -1,4 +1,4 @@
-package net.blueaxealotle.clock;
+package blueaxealotle.clock;
 
 import java.util.concurrent.TimeUnit;
 import java.time.*;
