@@ -1,8 +1,11 @@
+package net.blueaxealotle.clock;
+
 import java.util.concurrent.TimeUnit;
 import java.time.*;
 import java.awt.*;
 import java.util.Timer;
 import java.util.TimerTask;
+
 /**
 <B><I>Copyright 2006</I></B> by Ken Lambert and Martin Osborne.
 <BR><BR>

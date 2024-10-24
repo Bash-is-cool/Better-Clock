@@ -1,4 +1,4 @@
- 
+ package net.blueaxealotle.clock;
 
 import javax.swing.*;
 import java.awt.geom.*;

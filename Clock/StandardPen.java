@@ -1,3 +1,5 @@
+package net.blueaxealotle.clock;
+
 import java.util.concurrent.TimeUnit;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;

@@ -1,3 +1,5 @@
+package net.blueaxealotle.clock;
+
 import java.awt.Color;
 
 /**
@@ -28,7 +30,7 @@ public interface Pen {
    Action: The pen moves the specified distance in the current direction. 
    The distance can be an integer or floating-point number and is measured 
    in pixels (picture elements). The size of a pixel depends on the 
-   monitorÕs resolution. For instance, when we say that a monitor's 
+   monitorï¿½s resolution. For instance, when we say that a monitor's 
    resolution is 800 by 600, we mean that the monitor is 800 pixels wide 
    and 600 pixels high.
    */   
