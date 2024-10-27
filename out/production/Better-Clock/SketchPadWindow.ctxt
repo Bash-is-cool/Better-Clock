@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=SketchPadWindow
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\nProvides\ behavior\ for\ an\ application\ window\ with\ sketchpads.\r\n
+comment1.params=
+comment1.target=SketchPadWindow()
+comment1.text=\ \ \ \r\n\ \ \ Action\:\ Sets\ the\ close\ operation\ to\ exit,\ but\ the\ client\ \r\n\ \ \ must\ add\ the\ sketchpad(s)\ and\ set\ all\ of\ the\ other\ attributes\ \r\n\ \ \ of\ the\ window.\r\n
+comment2.params=width\ height
+comment2.target=SketchPadWindow(int,\ int)
+comment2.text=\ \ \ \r\n\ \ \ Action\:\ Sets\ the\ close\ operation\ to\ exit\ and\ the\ window's\r\n\ \ \ width\ and\ height\ to\ the\ parameters,\ but\ the\ client\ \r\n\ \ \ must\ add\ the\ sketchpad(s)\ and\ set\ all\ of\ the\ other\ attributes\ \r\n\ \ \ of\ the\ window.\r\n
+comment3.params=pad
+comment3.target=SketchPadWindow(SketchPad)
+comment3.text=\ \ \ \r\n\ \ \ Action\:\ Pops\ up\ an\ application\ window\ with\ the\ client's\r\n\ \ \ sketchpad\ and\ a\ default\ size\ of\ 150,\ 150.\r\n
+comment4.params=width\ height\ pad
+comment4.target=SketchPadWindow(int,\ int,\ SketchPad)
+comment4.text=\ \ \ \r\n\ \ \ Action\:\ Pops\ up\ an\ application\ window\ with\ the\ client's\r\n\ \ \ sketchpad,\ width,\ and\ height.\r\n
+numComments=5

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=WigglePen
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\nProvides\ behavior\ and\ state\ for\ a\ pen\ with\ wiggles.\ \ The\ shape\ of\ the\r\nwiggles\ depends\ on\ a\ constant\ rate\ of\ wiggling\ and\ a\ wiggle\ angle.\ \ The\r\ndefault\ wiggle\ rate\ is\ 5\ and\ the\ default\ wiggle\ angle\ is\ 30\ degrees.\r\nThe\ client\ can\ specify\ these\ values\ with\ a\ constructor.\ \r\n
+comment1.params=
+comment1.target=WigglePen()
+comment1.text=\ \r\n\ \ \ Action\:\ Pops\ up\ an\ application\ window\ containing\ a\ sketchpad\ \r\n\ \ \ and\ an\ associated\ wiggle\ pen\ with\ a\ wiggle\ rate\ of\ 5\ and\ a\ \r\n\ \ \ wiggle\ angle\ of\ 30\ degrees.\r\n
+comment2.params=pad\ w\ wa
+comment2.target=WigglePen(SketchPad,\ int,\ double)
+comment2.text=\ \r\n\ \ \ Action\:\ Associates\ a\ wiggle\ pen\ with\ the\ client's\ sketchpad\r\n\ \ \ using\ the\ client's\ wiggle\ rate\ and\ wiggle\ angle.\ \r\n\ \ \ @param\ pad\ The\ client's\ sketchpad\r\n\ \ \ @param\ w\ The\ number\ of\ wiggles\ or\ wiggle\ rate\r\n\ \ \ @param\ wa\ The\ wiggle\ angle\ in\ degrees\r\n
+comment3.params=w
+comment3.target=WigglePen(SketchPadWindow)
+comment3.text=\ \ \ \r\n\ \ \ Action\:\ Pops\ up\ the\ client's\ application\ window\ containing\ a\ sketchpad\ \r\n\ \ \ and\ an\ associated\ wiggle\ pen.\r\n
+comment4.params=distance
+comment4.target=void\ move(double)
+comment5.params=x\ y
+comment5.target=void\ move(double,\ double)
+numComments=6

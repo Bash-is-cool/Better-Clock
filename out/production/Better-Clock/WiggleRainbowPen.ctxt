@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=WiggleRainbowPen
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\nProvides\ behavior\ for\ a\ pen\ with\ wiggles\ and\ random\ colors\ (combines\ the\r\nbehavior\ of\ WigglePen\ and\ RainbowPen).\r\n
+comment1.params=
+comment1.target=WiggleRainbowPen()
+comment2.params=pad\ wiggles\ wiggleAngle
+comment2.target=WiggleRainbowPen(SketchPad,\ int,\ double)
+comment3.params=str
+comment3.target=void\ drawString(java.lang.String)
+comment4.params=w
+comment4.target=WiggleRainbowPen(SketchPadWindow)
+comment5.params=distance
+comment5.target=void\ move(double)
+comment6.params=x\ y
+comment6.target=void\ move(double,\ double)
+numComments=7

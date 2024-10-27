@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=CommandDrawLine
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\n
+comment1.params=y1\ y2\ y3\ y4
+comment1.target=CommandDrawLine(double,\ double,\ double,\ double)
+comment2.params=g\ width\ height
+comment2.target=void\ doCommand(java.awt.Graphics2D,\ int,\ int)
+numComments=3

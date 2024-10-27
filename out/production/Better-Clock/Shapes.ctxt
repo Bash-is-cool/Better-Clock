@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Shapes
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\nProvides\ an\ application\ window\ with\ a\ pen\ for\ drawing\ lines,\r\ncircles,\ and\ rectangles.\r\n
+comment1.params=
+comment1.target=Shapes()
+comment2.params=width\ height
+comment2.target=Shapes(int,\ int)
+comment3.params=color
+comment3.target=void\ setColor(java.awt.Color)
+comment4.params=x1\ y1\ x2\ y2
+comment4.target=void\ drawLine(double,\ double,\ double,\ double)
+comment4.text=\ \r\n\ \ \ Action\:\ Draws\ a\ line\ segment.\r\n\ \ \ @param\ x1\ The\ line\ segment's\ initial\ x\ coordinate\r\n\ \ \ @param\ y1\ The\ line\ segment's\ initial\ y\ coordinate\r\n\ \ \ @param\ x2\ The\ line\ segment's\ ending\ x\ coordinate\r\n\ \ \ @param\ y2\ The\ line\ segment's\ ending\ y\ coordinate\r\n
+comment5.params=x\ y\ r
+comment5.target=void\ drawCircle(double,\ double,\ double)
+comment5.text=\ \r\n\ \ \ Action\:\ Draws\ a\ circle.\r\n\ \ \ @param\ x\ The\ x\ coordinate\ of\ the\ circle's\ center\ point\r\n\ \ \ @param\ y\ The\ y\ coordinate\ of\ the\ circle's\ center\ point\r\n\ \ \ @param\ r\ The\ circle's\ radius\r\n
+comment6.params=x\ y\ w\ h
+comment6.target=void\ drawRectangle(double,\ double,\ double,\ double)
+comment6.text=\ \r\n\ \ \ Action\:\ Draws\ a\ rectangle.\r\n\ \ \ @param\ x\ The\ x\ coordinate\ of\ the\ rectangle's\ upper\ left\ corner\ point\r\n\ \ \ @param\ y\ The\ y\ coordinate\ of\ the\ rectangle's\ upper\ left\ corner\ point\r\n\ \ \ @param\ w\ The\ rectangle's\ width\r\n\ \ \ @param\ h\ The\ rectangle's\ height\r\n
+numComments=7

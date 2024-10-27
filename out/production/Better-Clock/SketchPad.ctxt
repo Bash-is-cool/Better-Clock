@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=SketchPad
+comment0.text=\r\n<B><I>Copyright\ 2006</I></B>\ by\ Ken\ Lambert\ and\ Martin\ Osborne.\r\n<BR><BR>\r\nThe\ panel\ associated\ with\ a\ pen.\ \ The\ initial\ background\ color\ is\ white.\r\nThe\ client\ can\ modify\ the\ sketchpad's\ background\ color\ by\ using\ setBackground(aColor).\r\n
+comment1.params=
+comment1.target=SketchPad()
+comment2.params=gg
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment3.params=color
+comment3.target=void\ setColor(java.awt.Color)
+comment4.params=width
+comment4.target=void\ setPenWidth(int)
+comment5.params=x1\ x2\ x3\ x4\ color\ width
+comment5.target=void\ drawLine(double,\ double,\ double,\ double,\ java.awt.Color,\ int)
+comment6.params=str\ x1\ x2\ color
+comment6.target=void\ drawString(java.lang.String,\ double,\ double,\ java.awt.Color)
+numComments=7
