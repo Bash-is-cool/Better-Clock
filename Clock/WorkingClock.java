@@ -1,9 +1,5 @@
-
-
-import java.awt.*;
-
 /**
- * Makes good looking (and working) Analog clock
+ * Makes good-looking (and working) Analog clock
  *
  * @author Alex Silverman
  * @version 1.1.1

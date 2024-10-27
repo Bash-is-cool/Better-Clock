@@ -38,7 +38,7 @@ abstract public class AbstractPen implements Pen {
    public void home() {
       xPos = 0;
       yPos = 0;
-      direction = 90.0;
+      direction = 360;
    }
 
    public void move(double distance) {
@@ -59,7 +59,7 @@ abstract public class AbstractPen implements Pen {
    }
    
    public void setDirection(double d){
-      direction = d % 360.0;
+      direction = d  % 360 + 90;
    }   
 
    public void setWidth(int w){
