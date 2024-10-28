@@ -140,23 +140,57 @@ public class ClockMethods extends AbstractPen {
             p.pi(ZonedDateTime.now(ZoneId.of("America/Chicago")).getHour());
 
             //Seconds Hand
-            clock.drawHand(300, 3);
-
+            clock.drawSHand(244, 4);
+            clock.drawMHand(244, 5);
             }
         }, 0, 1000);
    }
 
-   public void drawHand(int length, int width) {
+   public void drawSHand(int length, int width) {
        this.up();
+       this.setColor(Color.white);
+       this.setWidth(width);
+       this.move(0,0);
+       seconds();
+       this.down();
+       this.move(length);
+       p.d(1000);
+       this.setColor(Color.magenta);
+       this.move(-length);
+       this.up();
+       this.setColor(Color.white);
        this.setWidth(width);
        this.move(0,0);
        seconds();
        this.down();
        this.move(length);
    }
+   
+      public void drawMHand(int length, int width) {
+       this.up();
+       this.setColor(Color.white);
+       this.setWidth(width);
+       this.move(0,0);
+       minutes();
+       this.down();
+       this.move(length);
+       this.setColor(Color.magenta);
+       this.move(-length);
+       this.up();
+       this.setColor(Color.white);
+       this.setWidth(width);
+       this.move(0,0);
+       minutes();
+       this.down();
+       this.move(length);
+   }
 
    public void seconds() {
        this.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() * -6);
+   }
+   
+   public void minutes() {
+       this.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute() * -6);
    }
 }
 
