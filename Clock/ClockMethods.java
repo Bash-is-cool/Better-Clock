@@ -3,6 +3,7 @@ import java.time.*;
 import java.awt.*;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 /**
 <B><I>Copyright 2006</I></B> by Ken Lambert and Martin Osborne.
@@ -140,7 +141,7 @@ public class ClockMethods extends AbstractPen {
 
             //Seconds Hand
             clock.drawHand(300, 3);
-                   
+
             }
         }, 0, 1000);
    }
@@ -155,37 +156,7 @@ public class ClockMethods extends AbstractPen {
    }
 
    public void seconds() {
-       if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 1) {
-           this.setDirection(-6);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 2) {
-           this.setDirection(-12);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 3) {
-           this.setDirection(-18);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 4) {
-           this.setDirection(-24);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 5) {
-           this.setDirection(-30);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 6) {
-           this.setDirection(-36);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 7) {
-           this.setDirection(-42);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 8) {
-           this.setDirection(-48);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 9) {
-           this.setDirection(-54);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 10) {
-           this.setDirection(-60);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 11) {
-           this.setDirection(-66);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 12) {
-           this.setDirection(-72);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 13) {
-           this.setDirection(-78);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 14) {
-           this.setDirection(-84);
-       } else if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 15) {
-           this.setDirection(-90);
-       }
+       this.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() * -6);
    }
 }
 
