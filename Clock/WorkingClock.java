@@ -1,5 +1,3 @@
-import java.time.Clock;
-
 /**
  * Makes good-looking (and working) Analog clock
  *

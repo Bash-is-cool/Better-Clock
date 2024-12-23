@@ -4,7 +4,6 @@ import java.time.*;
 import java.awt.*;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.TimeUnit;
 
 /**
 <B><I>Copyright 2006</I></B> by Ken Lambert and Martin Osborne.
