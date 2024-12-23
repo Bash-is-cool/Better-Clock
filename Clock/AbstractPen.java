@@ -1,5 +1,6 @@
 
 
+import javax.swing.*;
 import java.awt.*;
 
 /**
@@ -57,6 +58,8 @@ abstract public class AbstractPen implements Pen {
    public void setColor(Color c) {
       color = c;
    }
+
+   public void setBackround(Color c) {pad.setBackground(c);}
    
    public void setDirection(double d){
       direction = d  % 360 + 90;

@@ -1,4 +1,5 @@
 //import java.util.concurrent.TimeUnit;
+import javax.swing.*;
 import java.time.*;
 import java.awt.*;
 import java.util.Timer;
@@ -129,21 +130,54 @@ public class ClockMethods extends AbstractPen {
        this.move(size);  
    }
    
-   public static void drawClock(){
+   public static void drawClock() {
         ClockMethods clock = new ClockMethods();
+        clock.setBackround(Color.black);
         clock.drawTicks();
         Timer timer = new Timer();
+        clock.drawMHand(244, 5);
+        clock.drawHHand(100, 7);
+
         timer.schedule(new TimerTask() {
             public void run() {
-            p.pi(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond());
-            p.pi(ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute());
-            p.pi(ZonedDateTime.now(ZoneId.of("America/Chicago")).getHour());
+            //p.pi(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond());
+            //p.pi(ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute());
+            //p.pi(ZonedDateTime.now(ZoneId.of("America/Chicago")).getHour());
 
             //Seconds Hand
             clock.drawSHand(244, 4);
+
             clock.drawMHand(244, 5);
+
+
+            clock.drawHHand(100, 7);
+
+            if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 0) {
+                clock.up();
+                clock.setWidth(5);
+                clock.move(0, 0);
+                clock.setColor(Color.magenta);
+                clock.down();
+                clock.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute() * -6 + 6 );
+                clock.move(244);
+            } else if (ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute() == 0) {
+                clock.up();
+                clock.setWidth(7);
+                clock.move(0, 0);
+                clock.setColor(Color.magenta);
+                clock.down();
+                clock.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getHour() * -30 + 30 );
+                clock.move(100);
             }
-        }, 0, 1000);
+
+            if(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() == 0) {
+                clock.drawMHand(244, 5);
+            } else if (ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute() == 0) {
+                clock.drawHHand(100, 7);
+            }
+
+            }
+        }, 0, 100);
    }
 
    public void drawSHand(int length, int width) {
@@ -166,16 +200,7 @@ public class ClockMethods extends AbstractPen {
        this.move(length);
    }
    
-      public void drawMHand(int length, int width) {
-       this.up();
-       this.setColor(Color.white);
-       this.setWidth(width);
-       this.move(0,0);
-       minutes();
-       this.down();
-       this.move(length);
-       this.setColor(Color.magenta);
-       this.move(-length);
+   public void drawMHand(int length, int width) {
        this.up();
        this.setColor(Color.white);
        this.setWidth(width);
@@ -185,6 +210,16 @@ public class ClockMethods extends AbstractPen {
        this.move(length);
    }
 
+    public void drawHHand(int length, int width) {
+        this.up();
+        this.setColor(Color.white);
+        this.setWidth(width);
+        this.move(0,0);
+        hours();
+        this.down();
+        this.move(length);
+    }
+
    public void seconds() {
        this.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getSecond() * -6);
    }
@@ -192,5 +227,13 @@ public class ClockMethods extends AbstractPen {
    public void minutes() {
        this.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getMinute() * -6);
    }
+
+    public void hours() {
+        this.setDirection(ZonedDateTime.now(ZoneId.of("America/Chicago")).getHour() * -30);
+    }
+
+    public static void start() {
+
+    }
 }
 

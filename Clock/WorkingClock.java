@@ -1,3 +1,5 @@
+import java.time.Clock;
+
 /**
  * Makes good-looking (and working) Analog clock
  *
@@ -8,6 +10,6 @@ public class WorkingClock
 {
    public static void main(String[] args)
    {
-        ClockMethods.drawClock();
+       ClockMethods.drawClock();
    }
 }
